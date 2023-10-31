@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+    <title>webpage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style8.css">
+
+</head>
+
+<body>
+
+    <div class="banner">
+
+        <div class="navbar">
+
+            <img src="saree.png" class="logo"><h1>NANDIKA'S SAREES</h1>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Bedroom</a></li>
+
+                <li><a href="#">Dinning</a></li>
+
+                <li><a href="#">Kitchen</a></li>
+
+                <li><a href="#">Backyard</a></li>
+
+            </ul> 
+
+        </div>
+
+    <div class="content">
+
+        <h1>DESIGNING SAREES</h1>
+
+        <p>Saree is a our traditional dress all women <br>  
+
+            are like the sarees</p>
+
+        <div>
+
+            <button type="button"><span></span> WATCH MORE</button>
+
+            <button type="button"><span></span>SUBSCRIBE</button>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+
+
+                const targetId = this.getAttribute('href').substring(1);
+
+                const targetElement = document.getElementById(targetId);
+
+
+
+                if(targetElement) {
+
+                    window.scrollTo({
+
+                        top: targetElement.offsetTop,
+
+                        behaviour: 'smooth'
+
+                    });
+
+                });
+
+            });             
+
+         });
+
+     </script>
+
+</body>
+
+</html>
